@@ -7,7 +7,7 @@ const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
 
-const BOT_MSGS = "Sorry if my answers are not relevant. :))";
+const BOT_MSGS = "Du Hurensohn!!!";
 
 msgerForm.addEventListener("submit", event => {
   event.preventDefault();
@@ -60,7 +60,7 @@ function botResponse() {
   const delay = msgText.split(" ").length * 100;
 
   setTimeout(() => {
-    appendMessage(BOT_NAME, BOT_IMG, "left", "Du Hurensohn");
+    appendMessage(BOT_NAME, BOT_IMG, "left", BOT_MSGS);
   }, delay);
 }
 
